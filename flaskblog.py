@@ -6,16 +6,16 @@ app.config['SECRET_KEY'] = '447cc3d7257853eafabc30fd9c373ff8'
 
 posts = [
     {
-        'author': 'Corey Schafer',
+        'author': 'Joe Skvarna',
         'title': 'What I Think',
-        'content': 'This is what I think!!!',
-        'date_posted': 'April 20, 2018'
+        'content': 'My name is Joe. This is what I think!!!',
+        'date_posted': 'January 19, 2022'
     },
     {
-        'author': 'Jane',
-        'title': 'OK, but this is what I think',
-        'content': 'This is what I think!!',
-        'date_posted': 'April 21, 2018'
+        'author': 'Bob Mcdonald',
+        'title': 'Hello World',
+        'content': 'Hellow World, my name is Bob',
+        'date_posted': 'January 12, 2022'
     }
 ]
 

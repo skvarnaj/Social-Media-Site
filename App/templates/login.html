@@ -36,11 +36,6 @@
                     {{ form.remember.label('Remember Me') }}
                 </div>
             </fieldset>
-            <body>
-                {% for mesg in get_flashed_messages() %}
-                <span>{{ mesg }}</span>
-                {% endfor %}
-              </body>
             <div class = 'form-group'>
                 {{ form.submit(class='btn btn-outline-info') }}
             </div>

@@ -34,6 +34,7 @@ body {
   
   .article-title {
     color: #444444;
+    text-decoration: none;
   }
   
   a.article-title:hover {
@@ -43,6 +44,7 @@ body {
   
   .article-content {
     white-space: pre-line;
+    text-decoration: none;
   }
   
   .article-img {

@@ -11,6 +11,6 @@ def home():
     posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page = 5)
     return render_template('home.html', posts=posts)
 
-@main.route("/about")
-def about():
-    return render_template('about.html', title = 'About')
+@main.route("/news")
+def news():
+    return render_template('news.html', title = 'News')

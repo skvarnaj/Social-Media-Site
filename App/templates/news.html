@@ -1,4 +1,27 @@
 {% extends 'layout.html' %}
 {% block content %}
-<h1>News Page Coming Soon!</h1>
+<h1>News Page Functionality Coming Soon!</h1>
+<article class="media content-section">
+    <img class="rounded-circle article-img">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" style = "text-decoration: none">News Post username</a>
+        <small class="text-muted">News Posts date</small>
+      </div>
+      <h2><a class="article-title">News Post Title</a></h2>
+      <p class="article-content">News Post Content</p>
+    </div>
+</article>
 {% endblock content %}
+{% block news %}
+<div class="col-md-4">
+    <div class="content-section">
+      <h3>Thoughts?</h3>
+      <p class='text-muted'>What do you think of this news story:
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-light">Link to news stories coming soon!</li>
+          <br><p class='text-muted'>Tip: News stories are updated frequently. If you're posting about a specific news story, refer to it in the title of your post or link to it!</p></br>
+        </ul>
+      </p>
+</div>
+{% endblock news %}

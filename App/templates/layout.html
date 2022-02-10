@@ -10,16 +10,16 @@
 <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet" type="text/css">
 
     {% if title %}
-        <title>SimplyChat - {{ title }}</title>
+        <title>Thoughtful- {{ title }}</title>
     {% else %}
-        <title>SimplyChat</title>
+        <title>Thoughtful</title>
     {% endif %}
 </head>
 <body>
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
           <div class="container">
-            <a class="navbar-brand mr-4" href="/">Thoughts?</a>
+            <a class="navbar-brand mr-4" href="/">Thoughtful</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,8 +27,6 @@
               <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="/">General</a>
                 <a class="nav-item nav-link" href="{{ url_for('main.news') }}">News</a>
-                <a class="nav-item nav-link" href="">Politics</a>
-                <a class="nav-item nav-link" href="">Caption This!</a>
               </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav ms-auto">
@@ -59,15 +57,7 @@
             {% endwith %}
             {% block content %}{% endblock %}
           </div>
-          <div class="col-md-4">
-            <div class="content-section">
-              <h3>Thoughts?</h3>
-              <p class='text-muted'>What do you think of this news story:
-                <ul class="list-group">
-                  <li class="list-group-item list-group-item-light">Link to news story</li>
-                </ul>
-              </p>
-            </div>
+          {% block news %}{% endblock %}
           </div>
         </div>
       </main>

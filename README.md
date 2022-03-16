@@ -2,6 +2,7 @@
 The goal of this project was to increase my skills in both backend and frontend web development using Python's Flask and HTML/CSS. Below you can see screenshots and a link to the page.
 
 ## Screenshots
+
 ![](images/home_page.png)
 
 ![](images/join_today.png)
